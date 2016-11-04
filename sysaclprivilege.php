@@ -50,7 +50,7 @@ $app->add(new \Slim\Middleware\MiddlewareMQManager());
 $app->get("/pkFillComboBoxFullPrivilege_sysAclPrivilege/", function () use ($app ) {
 
     $BLL = $app->getBLLManager()->get('sysAclPrivilegeBLL');
-    print_r('asd');
+   // print_r('asd');
     $resCombobox = $BLL->fillComboBoxFullPrivilege();
             
     $flows = array();
